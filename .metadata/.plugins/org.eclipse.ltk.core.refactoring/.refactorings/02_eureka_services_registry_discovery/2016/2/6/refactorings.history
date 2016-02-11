@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;registry&apos; to &apos;it.luigibennardis.eureka.server&apos;&#x0D;&#x0A;- Original project: &apos;02_eureka_services_registry_discovery&apos;&#x0D;&#x0A;- Original element: &apos;02_eureka_services_registry_discovery/src/main/java/registry&apos;&#x0D;&#x0A;- Renamed element: &apos;02_eureka_services_registry_discovery/src/main/java/it.luigibennardis.eureka.server&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;registry&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;registry" name="it.luigibennardis.eureka.server" qualified="false" references="true" stamp="1455217184421" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,14 @@
+---
+applications:
+- name: 01-rest-backing-services
+  memory: 512M
+  instances: 1
+  host: 01-rest-backing-services
+  domain: cfapps.io
+  path: target/rest-backing-services.jar
+  services:
+    - myinstance
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    DEBUG: "true"
+    debug: "true"

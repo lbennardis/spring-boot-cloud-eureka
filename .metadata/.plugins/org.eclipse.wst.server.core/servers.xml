@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="1" hostname="Cloud" id="Pivotal Cloud Foundry" name="Pivotal Cloud Foundry" org.cloudfoundry.ide.eclipse.org="luigibennardis.it" org.cloudfoundry.ide.eclipse.serverId="l.bennardis@email.it_luigibennardis.it_development@https://api.run.pivotal.io" org.cloudfoundry.ide.eclipse.space="development" org.cloudfoundry.ide.eclipse.url="https://api.run.pivotal.io" org.cloudfoundry.ide.eclipse.username="l.bennardis@email.it" runtime-id="Cloud Foundry (Runtime) v1.0" server-type="org.cloudfoundry.appcloudserver.10" server-type-id="org.cloudfoundry.appcloudserver.10" start-timeout="600" stop-timeout="60" timestamp="210">
+    <list key="modules" value0="02_eureka_services_registry_discovery::org.cloudfoundry.ide.eclipse.server.core.StandAloneModuleFactory:02_eureka_services_registry_discovery::cloudfoundry.standalone.app::1.0" value1="03-microservice-server::org.cloudfoundry.ide.eclipse.server.core.StandAloneModuleFactory:03-microservice-server::cloudfoundry.standalone.app::1.0" value2="04-microservice-client::org.cloudfoundry.ide.eclipse.server.core.StandAloneModuleFactory:04-microservice-client::cloudfoundry.standalone.app::1.0"/>
+  </server>
+</servers>

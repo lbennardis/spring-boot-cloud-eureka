@@ -1,0 +1,15 @@
+---
+applications:
+- name: 03-microservice-server
+  memory: 1024M
+  instances: 1
+  host: 03-microservice-server
+  domain: cfapps.io
+  path: target/microservice-server.jar
+  services:
+      - eureka-server
+      - postgreSql
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    DEBUG: "true"
+    debug: "true"

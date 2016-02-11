@@ -1,0 +1,15 @@
+---
+applications:
+- name: 04-microservice-client
+  memory: 1024M
+  instances: 1
+  host: 04-microservice-client
+  domain: cfapps.io
+  path: target/microservice-client.jar
+  services:
+      - eureka-server
+
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    DEBUG: "true"
+    debug: "true"

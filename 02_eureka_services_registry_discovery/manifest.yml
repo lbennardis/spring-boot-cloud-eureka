@@ -1,0 +1,12 @@
+---
+applications:
+- name: 02-eureka-server
+  memory: 1024M
+  instances: 1
+  host: 02-eureka-server
+  domain: cfapps.io
+  path: target/eureka-server.jar
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    DEBUG: "true"
+    debug: "true"

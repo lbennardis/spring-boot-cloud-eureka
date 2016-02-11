@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: microservice-server
+    
+  jpa:
+    generate-ddl: true 
+
+server:
+  port: 7111
+
+eureka:
+  password: password
+  client:
+    serviceUrl:
+      defaultZone: http://user:${eureka.password}@localhost:8761/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+      
+---
+spring:
+  profiles: cloud
+eureka:
+  client:
+    serviceUrl:
+     defaultZone: http://02-eureka-server.cfapps.io/eureka/
+  instance:
+    hostname: 03-microservice-server.cfapps.io
+    leaseRenewalIntervalInSeconds: 5
+    nonSecurePort: 80
